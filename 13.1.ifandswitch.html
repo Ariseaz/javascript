@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IF statements</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <p id="mypara">Javascript Lessons!</p>
+    <br>
+    <input type="text" id="speed">
+    <input type="button" id="check" value="Check" onclick="checkSpeed()">
+    <br>
+    <br>
+    
+    <input type="text" id="season">
+    <button onclick="checkSeason()">Your Season</button>
+
+    <script>
+        
+        function checkSpeed(speed){
+        var speed = document.getElementById("speed").value;  
+        if (speed>80){
+            alert("You are moving too fast!")
+        }
+        else if(speed<40){
+            alert("You are moving too slow");
+        }
+        else{
+            alert("You are moving just fine");
+        }
+        
+        }
+        
+        function checkSeason(){
+            var x = document.getElementById("season").value;
+            switch(x){
+            case "raining":
+            window.alert("It is raining Season my Friend");
+            break;
+            
+            case "dry":
+            window.alert("It is Dry Season my Niga");
+            break;
+            
+            case "harmattan":
+            window.alert("It is a Cloudy Harmattan Season my Guy");
+            break;
+                default:
+                    window.alert("I dont know your Season Skurry");
+            }
+        }
+    </script>
+</body>
+
+</html>

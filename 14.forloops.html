@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Loops</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <p id="mypara">Javascript!</p>
+
+    <script>
+        
+        /*
+        manual way of running the script solved by for loop
+        document.getElementById("mypara").innerHTML+="<br>" +1;
+        document.getElementById("mypara").innerHTML+="<br>" +2;
+        document.getElementById("mypara").innerHTML+="<br>" +3;
+        document.getElementById("mypara").innerHTML+="<br>" +4;
+            
+        */
+        
+        for (x=0; x<5; x++){
+            document.getElementById("mypara").innerHTML+="<br>" +x;
+        }
+        /*
+        //Reverse order of the code above
+        for (x=5; x>0; x--){
+            document.getElementById("mypara").innerHTML+="<br>" +x;
+        }
+        */
+        //finding the square of numbers from 7 downward
+        for (x=7; x>0; x--){
+            document.getElementById("mypara").innerHTML+="<br>" +Math.pow(x,2);
+        }
+        //to use this for an Array
+        var shoppingList = ["Bread", "Egg", "Tooth Paste", "Milk"];
+        for (x=0; x<shoppingList.length; x++){
+            document.getElementById("mypara").innerHTML+="<br>" +shoppingList[x];
+        }
+        //add value to items in an Array
+        var numberList =[1, 2, 3];
+        for(i=0; i<numberList.length; i++){
+            numberList[i]+=10;
+        }
+        document.getElementById("mypara").innerHTML+="<br>" + numberList;
+        
+        
+    </script>
+</body>
+
+</html>

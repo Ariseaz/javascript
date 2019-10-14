@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>While Loops</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <p id="para">Enter your money below!</p>
+    <input type="text" id="mypara">
+    <button onclick="initiateGame()">Start</button>
+    <p id="items">Result Below:</p>
+    <div id="itemsbought">
+    </div>
+            
+    <script>
+        //To buy items between 0 to N100 and see how many we can get
+        function initiateGame(){
+        var balance = document.getElementById("mypara").value;         //initial balance
+        var itemsBought= 0;         //items bought to be put at zero 
+        while (balance>0){
+            var itemPrice =Math.floor( Math.random()*100);      //to declare item Price is within N100
+            if(itemPrice<=balance){       //in as much the item price is less than or equal to balance    
+                itemsBought +=1;           //the num of items will increase by one as we buy items
+                balance     -=itemPrice;
+                document.getElementById("items").innerHTML+="<p>Items Amount:  N"+itemPrice+"  New Balance:  N"+balance+". </p>";
+            }
+         }
+        document.getElementById("itemsbought").innerHTML="<p> You bought: " + itemsBought + " items.</p>";
+        }
+    </script>
+</body>
+
+</html>

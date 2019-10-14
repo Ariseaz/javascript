@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arrays</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <p id="mypara">Javascript Lessons!</p>
+
+    <script>
+        
+        
+        
+        var shoppingList = ["bag", "semo", "bread" ];
+        
+        var shopList = new Array("bag", "semo", "bread");
+        
+        document.write(shopList);
+        document.write("<br>");
+        shopList.splice(1,1);
+        document.write(shopList);
+        
+      function myList (x){
+          document.getElementById("mypara").innerHTML ="<br>" + shopList;
+      }   
+    //  myList()  ;
+     
+    //    document.write(shopList);
+        
+        
+        
+      /*  
+        
+        var fruites = ["mango","apple"];
+        
+        function showResult(x){
+            document.getElementById("mypara").innerHTML +="<br/>" +x;
+            
+        }
+        showResult(fruites);
+       // showResult(fruites[1]); //show array with indes1
+        fruites[3]="mangos";
+         /*
+        fruites[2]="cashew";
+        showResult(fruites);
+      
+        fruites.splice(1,1);
+        showResult(fruites);
+        shoppingList.splice(1,0,"mango", "apple");
+        document.write(fruites);
+        */
+    </script>
+</body>
+
+</html>

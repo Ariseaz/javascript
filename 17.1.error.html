@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Errors</title>
+    <meta charset="utf-8">
+    <style>
+        .para{
+            color: darkred;
+            font-weight: 3.0em;
+        }
+        .para span{
+            color: red;
+            font-family: fantasy;
+            font-size-adjust: 25px;
+        }
+    </style>
+</head>
+<body>
+    <p class="para">
+Error Message:
+<span id="error"></span>
+</p>
+
+
+    <script>
+        try
+        {
+          sum(2,4)
+        }
+        catch(err){
+            document.getElementById("error").innerHTML =err.message;
+        }
+    </script>
+</body>
+
+</html>

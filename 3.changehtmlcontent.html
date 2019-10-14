@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <meta charset ="utf-8"> 
+    <title> Change HTML content </title> 
+    <style>       
+        .bluebox{
+            background-color: #3A5795;
+            color: white;
+            height: 100px;
+            width: auto;
+            padding: 16px;
+            margin: 10px;
+        }
+        .yellowbox{
+            background-color: rgb(222, 224, 84);
+            color: ;
+            height: 100px;
+            width:auto;
+            padding: 10px 5px 7px 3em;
+            margin: 10px;
+        }
+        .greenbox{
+            background-color: #31af37;
+            height: 100px;
+            width: auto;
+            padding: 10px;
+            margin: 10px;
+
+        }
+        .great{
+            background-color: #5a3479
+        }
+        p{
+            margin: 0px;
+        }
+    </style> 
+  </head> 
+  <body>
+        <div class="bluebox" id="facebook">
+            <p> Facebook is <span class="great">great</span>.</p>        
+        </div>
+        <div class="yellowbox" id="apple"><p> Apple</p>        
+        </div>
+        <div class="greenbox"><p> Microsoft</p></div>
+      
+      <button id="button1">Content of Facebook Box</button>
+      <button id="button2">Content of Apple Box</button>
+     <script>
+        document.getElementById("button1").onclick=
+            function(){
+            document.getElementById("facebook").innerHTML="<h1>Facebook</h1>";
+            
+            }
+        document.getElementById("button2").onclick=
+            function(){
+            document.getElementById("apple").innerHTML="<p>List of Courses</p><ul><li>HTML</li><li>Javascript</li><li>CSS</li></ul>";
+            
+            }  
+    </script>   
+  </body> 
+   
+   
+</html> 

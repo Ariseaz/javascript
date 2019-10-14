@@ -1,0 +1,1 @@
+window.alert("Welcome to my website, click ok to continue!")

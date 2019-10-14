@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IF statements</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <p id="mypara">Javascript Lessons!</p>
+    
+    <input type="text" id="speed">
+    <button onclick="speedo()">Speed</button>
+    <p></p>
+
+    <input type="text" id="season">
+    <button onclick="Seasons()">Season</button>
+    
+    <script>
+        /*
+        function speedo(){
+            var Speed = document.getElementById("speed").value;
+           if (Speed > 80){
+
+               window.alert("You are over speeding!");
+               } 
+            else if (Speed < 40 ){
+                window.alert("You are running quite slow.");
+            }
+            else if{
+                window.alert("You speed is normal")
+            }
+            else{
+                window.alert("Please type only figure")
+            }
+        }
+        */
+        function Seasons(){
+            var x = document.getElementById("season").value;
+            switch (x){
+                case "rain":
+                    window.alert("This is raining season");
+                 //   document.getElementById("para").innerHTML+="<br> This is raining season";
+                    break;
+                case "dry" :
+                    window.alert("It is not raining");
+                 //   document.getElementById("para").innerHTML="<br> It is not raining";
+                    break;
+                    
+                default:
+                    window.alert("I don't know");
+                //    document.getElementById("para").innerHTML="<br> I don't know";
+                    
+            }
+        }
+        
+        
+    </script>
+</body>
+
+</html>

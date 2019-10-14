@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SEtTime and SetInterval</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    
+    <p id="counter">
+        0
+    </p>
+    <button onclick="clearInterval(myCounter)">Stop Counting</button>
+    <p></p>
+    <button onclick="clearTimeout(delaywelcome)">Don't show Alert Message</button>
+    
+    
+    
+    
+    
+    
+    <script>
+        var counter= document.getElementById("counter"); //to get the paragraph
+        var x=0;                                        //starting point
+        var myCounter = setInterval (function(){x++;counter.innerHTML=x;},1000);
+        //setInterval is a function with inner function
+        
+        //I want a delay for like 3 seconds before the alert message
+        var delaywelcome = setTimeout(function(){window.alert("This is what I always want to show you")},3000);
+        
+              
+    </script>
+</body>
+
+</html>

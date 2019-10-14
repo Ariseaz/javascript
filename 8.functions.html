@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset ="utf-8"> 
+        <title> Function </title> 
+        <style>       
+            .bluebox{
+                background-color: #3A5795;
+                color: white;
+                height: 100px;
+                width: auto;
+                padding: 16px;
+                margin: 10px;
+            }
+            .yellowbox{
+                background-color: rgb(222, 224, 84);
+                color: ;
+                height: 100px;
+                width:auto;
+                padding: 10px 5px 7px 3em;
+                margin: 10px;
+            }
+            .greenbox{
+                background-color: #31af37;
+                height: 100px;
+                width: auto;
+                padding: 10px;
+                margin: 10px;
+
+            }
+            .great{
+                background-color: #5a3479
+            }
+            p{
+                margin: 0px;
+            }
+        </style> 
+    </head> 
+    <body>
+        <div class="bluebox" id="facebook">
+            <p> Facebook is <span class="great">great</span>.</p>        
+        </div>
+        <div class="yellowbox" id="apple"><p> Apple</p>        
+        </div>
+        
+        <div class="greenbox" id="microsoft"><p> Microsoft</p></div>
+        <button id="button1" onclick="swap('facebook','apple')">Swap Content of Facebook and Apple</button>
+        <button id="button1" onclick="swap('apple','microsoft')">Swap Content of Apple and Microsoft</button>
+        
+        <script>
+                function swap(id1,id2){
+                    var x= document.getElementById(id1).innerHTML;
+                    var y= document.getElementById(id2).innerHTML;
+                    
+                    document.getElementById(id2).innerHTML=x;
+                    document.getElementById(id1).innerHTML=y;
+                }
+        </script>
+    </body>
+</html>

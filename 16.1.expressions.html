@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regular Expressions "Regets"</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    
+            
+    <script>
+        var fname = "Olawale";
+      //  var pattern = /a/i;           //to check if "a" is present and its not case sensitive
+        var pattern = /a/g;           //to do a global search "g"
+      //  window.alert(fname.search(pattern));//to check if "a" is present and its not case sensitive "i"
+       // window.alert(fname.match(pattern));//to check if "a" is present and its not case sensitive
+        window.alert(pattern.test(fname));//to check if true or false; Returns boolean
+    </script>
+</body>
+
+</html>

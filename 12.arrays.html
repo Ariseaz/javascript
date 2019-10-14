@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arrays</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <p id="mypara">Javascript Lessons!</p>
+
+    <script>
+        var myFruits = ["apple", "mango","banana"]
+        //  another way of declaring array using constructors and objects
+        //  var myFruits = new Array("apple", "mango","banana")
+        //  window.console.log(myFruits);
+        //  document.getElementById("mypara").innerHTML=myFruits;
+        //  document.getElementById("mypara").innerHTML=myFruits[0];
+        //  document.getElementById("mypara").innerHTML=myFruits[2];
+        //  to add our result to the paragraph "Javascript Lessons!";
+        //  document.getElementById("mypara").innerHTML += "<br/>" + myFruits;
+        //  this is to append the array to the existing paragraph    
+              
+        //  document.getElementById("mypara").innerHTML+= "<br/>" + myFruits;
+        //  Using the index of the array 
+        
+        
+       // showResult(myFruits);
+        //showResult(myFruits[0]);
+        //showResult(myFruits[2]);
+        
+        function showResult(x){
+           document.getElementById("mypara").innerHTML+= "<br/>" + x; 
+        }
+        myFruits[1]="Cucumber";//to replace element in index 1
+        showResult(myFruits);
+        delete myFruits[1];     //to delete element index 1
+        window.alert(myFruits);
+        var myString = "what are we talking about here";
+        var myArray = myString.split();
+        showResult(myArray);
+        var myArray = myString.split(' ',2);
+        showResult(myArray);
+    </script>
+</body>
+
+</html>

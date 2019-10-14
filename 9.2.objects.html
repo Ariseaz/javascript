@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset ="utf-8"> 
+        <title> Objects </title> 
+        
+    </head> 
+    <body>
+        <p>
+        Javascript.
+        </p>
+        
+        <script>
+              var newObj = new Object();
+                  newObj.name = "Ayo",
+                newObj.school ="FPI",
+                newObj.city ="Ilaro";
+            
+            window.console.log(newObj);
+           
+            
+            var phone ={
+                model: "Samsung S7",
+                warranty:12,
+                color: "Gold",
+                camera: "16px"
+            }
+            window.console.log(phone);
+            delete phone.camera;
+            window.console.log(phone)
+            
+            function myIphone (make, model, year, color, warranty){
+                this.make="Iphone6";
+                this.model="6s";
+                this.year=2017;
+                this.color="white";
+                this.warranty=12;
+            }
+            window.console.log(myIphone);
+            
+        </script>
+    </body>
+</html>

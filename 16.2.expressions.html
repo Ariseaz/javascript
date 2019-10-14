@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regular Expressions "Regets"</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <p>
+First Name:
+<span id="fname">
+</span>
+</p>
+<p>
+Pattern:
+<span id="pattern">
+</span>
+</p>
+<p>
+Result(search):
+<span id="search">
+</span>
+</p>
+<p>
+  Result(match):
+<span id="match">
+</span>
+</p>
+<p>
+   Result(test):
+<span id="test">
+</span>
+</p>
+    <script>
+       var fname = "Oladele948463";
+      // var pattern =/e/g;
+     //  var pattern =/[a-z]/g; //to check characters from a to z
+      // var pattern = /[^atn]/g; //to check something outside of the above characters in patter
+     //  var pattern = /[4-7]/g; //test between 4 to 7
+        var pattern = /\d/g; //test for digits
+      // var pattern = new RegExp("a","g");
+      // var pattern = new RegExp("a-z","g"); 
+        document.getElementById("fname").innerHTML=fname;
+        document.getElementById("pattern").innerHTML=pattern;
+        document.getElementById("search").innerHTML=fname.search(pattern);
+        document.getElementById("match").innerHTML=fname.match(pattern);
+        document.getElementById("test").innerHTML=pattern.test(fname);
+                                
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Constructors</title>
+    <meta charset="utf-8">
+</head>
+<body>
+
+    <script>
+        function phone(make, model, warranty, color){
+            this.make=make;
+            this.model=model;
+            this.warranty=warranty;
+            this.color=color;
+            this.extwarranty =function(x){
+                this.warranty += x;
+            }
+            
+        }
+        
+        var myPhone= new phone("Apple","Iphone 5",5,"royalblue");
+        window.console.log(myPhone);
+        myPhone.extwarranty(10);
+        window.console.log(myPhone.warranty);
+        
+        myPhone.condition= "Like New!"
+        window.console.log(myPhone);
+        window.console.log(myPhone.condition);
+        
+        var myBrosPhone = new phone("Samsung","Galazy S7",2,"gold");
+        window.console.log(myBrosPhone);
+        window.console.log(myBrosPhone.condition);
+        myBrosPhone.condition="New";
+        window.console.log(myBrosPhone.condition);
+        window.console.log(myPhone.condition);
+        
+    </script>
+</body>
+
+</html>

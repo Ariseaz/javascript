@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <meta charset ="utf-8"> 
+    <title> Change STyle </title> 
+    <style>       
+        .bluebox{
+            background-color: #3A5795;
+            color: white;
+            height: 100px;
+            width: auto;
+            padding: 16px;
+            margin: 10px;
+        }
+        .yellowbox{
+            background-color: darkred;
+            color: ;
+            height: 100px;
+            width:auto;
+            padding: 10px 5px 7px 3em;
+            margin: 10px;
+        }
+        .greenbox{
+            background-color: #31af37;
+            height: 100px;
+            width: auto;
+            padding: 10px;
+            margin: 10px;
+        }
+        .great{
+            background-color: #5a3479
+        }
+        p{
+            margin: 0px;
+        }
+    </style> 
+  </head> 
+  <body>
+        <div class="bluebox" id="facebook"><p> Facebook is <span>great</span>.</p>        
+        </div>
+        <div class="yellowbox" id="apple"><p> Apple</p>        
+        </div>
+        <div class="greenbox" id="microsoft"><p> Microsoft</p></div>
+      
+      <button id="button1" onclick="swap('facebook','apple')">Change Facebook style</button>
+      <button id="button2" onclick="swap('apple','microsoft')">Change Apple style</button>
+      <button id="button3" onclick="bgchange()">Change Background</button>
+     <script>
+        
+         function bgchange(){
+             x = Math.round(Math.random()*256);
+             y = Math.round(Math.random()*256);
+             z = Math.round(Math.random()*256);
+             appleColor='rgb(' + x + ', ' + y + ', ' + z + ')';
+             msColor= 'rgb(' + y + ', ' + x+ ', ' + z + ')';
+             fbColor= 'rgb(' + z + ', ' + y + ', ' + z + ')';
+             
+             document.getElementById("apple").style.backgroundColor=appleColor;
+             document.getElementById("microsoft").style.backgroundColor=msColor;
+             document.getElementById("facebook").style.backgroundColor=fbColor;
+             
+         }
+         
+         function swap(id1,id2){
+             
+         var x =  document.getElementById(id1).innerHTML;
+         var y =  document.getElementById(id2).innerHTML;
+         
+         document.getElementById(id2).innerHTML=x;
+         document.getElementById(id1).innerHTML=y;
+             
+             bgchange();
+             
+         }
+         
+         
+         
+         
+         
+         
+         
+         
+         function fun2 (fname, lname){
+             
+             alert("My First name is " +fname);
+             alert("My Lastname is   " +lname )
+         }
+       //  fun2("Tayo","Tunji");
+         
+         /*
+         function greeting(){
+            alert("Good morning Sir!")
+        }
+      //   greeting()
+         
+         function secondgreeting(name){
+             alert("Say your name is  " +name);
+         }
+         secondgreeting("Azeez");
+         */
+    </script>   
+  </body> 
+   
+   
+</html> 
